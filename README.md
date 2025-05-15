@@ -117,5 +117,5 @@ info@levelsetnext.com
 
 ---
 
-<sub>© 2025 Donell Adams-Welch. Reuse by permission only.</sub>
+© 2025 Donell Adams-Welch. Reuse by permission only.
 
