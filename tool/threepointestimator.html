@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three-Point Estimation Tool</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      color: #0d1b2a;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      border: 1px solid #0d1b2a;
+    }
+    button {
+      padding: 14px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      background-color: #0d1b2a;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1e2e4a;
+    }
+    .button-pair {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .results {
+      margin-top: 15px;
+      padding: 15px;
+      border: 1px solid #0d1b2a;
+      background-color: #f0f4f8;
+    }
+    .divider {
+      height: 8px;
+      background-color: #0d1b2a;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Three-Point Estimation Tool</h1>
+  <div>
+    <label for="opt">Optimistic (O)</label>
+    <input type="number" id="opt" placeholder="e.g. 10" />
+    <label for="ml">Most Likely (M)</label>
+    <input type="number" id="ml" placeholder="e.g. 15" />
+    <label for="pes">Pessimistic (P)</label>
+    <input type="number" id="pes" placeholder="e.g. 30" />
+    <div class="button-pair">
+      <button onclick="calculateTE()">Calculate</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+    <div id="result" class="results"></div>
+  </div>
+  <div class="divider"></div>
+  <script>
+    function calculateTE() {
+      const O = parseFloat(document.getElementById("opt").value);
+      const M = parseFloat(document.getElementById("ml").value);
+      const P = parseFloat(document.getElementById("pes").value);
+      if (isNaN(O) || isNaN(M) || isNaN(P)) {
+        alert("Please enter valid numbers.");
+        return;
+      }
+      const TE = ((O + 4 * M + P) / 6).toFixed(2);
+      document.getElementById("result").innerText = `Expected Time (TE): ${TE} minutes`;
+    }
+    function reset() {
+      document.getElementById("opt").value = "";
+      document.getElementById("ml").value = "";
+      document.getElementById("pes").value = "";
+      document.getElementById("result").innerText = "";
+    }
+  </script>
+</body>
+</html>
