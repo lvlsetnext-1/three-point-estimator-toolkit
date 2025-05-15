@@ -1,8 +1,9 @@
 # Three-Point Estimator Toolkit  
 *Modular. Strategic. Reusable.*
 
-> 🖥️ Live Dashboard: [View on AWS S3](http://your-s3-url.com)  
-> 🔗 API Docs: [Swagger UI on Render](https://three-point-api.onrender.com/apidocs/)
+> 🖥️ Live Dashboard: [View on AWS S3](http://estimationdashboard.s3-website-us-east-1.amazonaws.com)  
+> 🔗 HTML Prototype: [View on S3](http://threepointestimator.s3-website-us-east-1.amazonaws.com)  
+> 📊 API Docs (Swagger): [https://three-point-api.onrender.com/apidocs/](https://three-point-api.onrender.com/apidocs/)
 
 ---
 
@@ -51,18 +52,23 @@ The Flask API can be:
 
 ```
 /docs/
-├── Whitepaper-From Roadmaps to Revenue.pdf
-├── 3-Point Estimation Case Study.pdf
-├── BRD-Estimation Tool with Wireframe.pdf
-
+├── Whitepaper.pdf
+├── Case Study.pdf
+├── Playbook.pdf
+├── QA Test Strategy.pdf
+├── SAFe vs 3 Point Commentary.pdf
+├── Lifecycle Roadmap.pdf
+├── BRD - Estimation Tool.docx
+├── index.html  ← (GitHub Pages redirect)
 /api/
 ├── app.py
 ├── requirements.txt
-
-/dashboard/
-├── estimation-dashboard-react (React app)
 /tool/
-├── threepointestimator.html (Standalone HTML version)
+├── threepointestimator.html
+/images/
+├── dashboard.png
+├── html-prototype.png
+├── swagger.png
 ```
 
 ---
@@ -97,7 +103,7 @@ cd api
 pip install -r requirements.txt
 python app.py
 
-# Start the React dashboard
+# Start the React dashboard (if applicable)
 cd dashboard/estimation-dashboard-react
 npm install
 npm start
@@ -110,12 +116,6 @@ Or simply open the HTML tool:
 
 ---
 
-## 🪪 Built & Branded By  
-**Donell Adams-Welch**  
-[www.lvlsetnext.com](https://www.lvlsetnext.com)  
-info@levelsetnext.com
+<sub>© 2025 Donell Adams-Welch. Reuse by permission only.</sub>
 
----
-
-© 2025 Donell Adams-Welch. Reuse by permission only.
 
