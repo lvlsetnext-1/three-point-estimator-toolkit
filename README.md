@@ -116,4 +116,4 @@ Or simply open the HTML tool:
 
 ---
 
-<sub>© 2025 Donell Adams-Welch. Reuse by permission only.</sub>
+<sub>© 2025  Donell Adams-Welch. Reuse by permission only.</sub>
