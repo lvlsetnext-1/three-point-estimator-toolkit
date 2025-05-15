@@ -114,3 +114,8 @@ Or simply open the HTML tool:
 **Donell Adams-Welch**  
 [www.lvlsetnext.com](https://www.lvlsetnext.com)  
 info@levelsetnext.com
+
+---
+
+<sub>© 2025 Donell Adams-Welch. Reuse by permission only.</sub>
+
